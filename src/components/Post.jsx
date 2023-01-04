@@ -2,7 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 
 const Post = ( node ) => {
-    const imageUrl = node.featureImage.url + "?r=25&fit=pad&w=" + window.innerWidth
+    const imageUrl = node.featureImage.url + "?r=25&fit=pad&w=500"
     return <>
         <h2>{node.date}</h2>
         <picture>

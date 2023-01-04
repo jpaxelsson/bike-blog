@@ -7,7 +7,7 @@ import Footer from "../components/Footer"
 const Single = ( {data} ) => {
 
     const post = data.contentfulPost
-    const imageUrl = post.featureImage.url + "?r=25&fit=pad&w=" + window.innerWidth
+    const imageUrl = post.featureImage.url + "?r=25&fit=pad&w=500"
 
     return <>
         <div class="wrapper">
