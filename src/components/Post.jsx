@@ -1,16 +1,11 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import Picture from "./Picture"
 
 const Post = ( node ) => {
-    const imageUrl = node.featureImage.url + "?r=25&fit=pad&w=500"
     return <>
         <h2>{node.date}</h2>
-        <picture>
-            <source srcSet={imageUrl + '&fm=webp'} type="image/webp"/>
-            <source srcSet={imageUrl + '&fm=jpg'} type="image/jpeg"/>
-            <img src={imageUrl + '&fm=webp&fit=pad'} alt={node.featureImage.description} />
-        </picture>
-        
+        <Picture {...node.featureImage} />
         <p>{node.description}</p>
         <Link to={"../post/"+node.slug}>Läs allt om det!</Link>`
     </>

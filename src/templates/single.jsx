@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 import Post from '../components/Post'
 import Header from '../components/Header'
 import Footer from "../components/Footer"
+import Picture from "../components/Picture"
 
 const Single = ( {data} ) => {
 
@@ -10,23 +11,17 @@ const Single = ( {data} ) => {
     const imageUrl = post.featureImage.url + "?r=25&fit=pad&w=500"
 
     return <>
-        <div class="wrapper">
-      <Header/>
-      <main>
-        <h2>{post.title}</h2>
-        <h3>{post.date}</h3>
-        <picture>
-            <source srcSet={imageUrl + '&fm=webp'} type="image/webp"/>
-            <source srcSet={imageUrl + '&fm=jpg'} type="image/jpeg"/>
-            <img src={imageUrl + '&fm=webp&fit=pad'} alt={post.featureImage.description} />
-        </picture>
-        
-        <p>{post.description}</p>
-
-        <Link to="/posts">&lt;&lt;&lt; Tillbaka</Link>
-        </main>
-      <Footer/>
-    </div>
+      <div class="wrapper">
+        <Header/>
+        <main>
+          <h2>{post.title}</h2>
+          <h3>{post.date}</h3>
+          <Picture {...post.featureImage} />
+          <p>{post.description}</p>
+          <Link to="/posts">&lt;&lt;&lt; Tillbaka</Link>
+          </main>
+        <Footer/>
+      </div>
     </>
 }
 
