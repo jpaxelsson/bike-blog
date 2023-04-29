@@ -52,3 +52,18 @@
 Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
 
 [<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+
+
+
+
+
+Font awesome in gatsby
+
+1. npm install --save gatsby-plugin-fontawesome-css
+ev även npm i @fortawesome/fontawesome-free
+
+2. @import url('@fortawesome/fontawesome-free/css/all.min.css');
+
+3. använd sisomså <i class="fa-sharp fa-solid fa-diamond">
+
+

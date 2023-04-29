@@ -67,6 +67,7 @@ const Nav = () => {
                 gap: 20px;
                 position: absolute;
                 font-size: 1.5rem; 
+                z-index: 99;
             }
 
             .navigation li {
