@@ -379,6 +379,20 @@ footer {
       display: none;
     }
   }
+
+  path {
+    fill: transparent;
+  }
+  
+  text {
+    fill: #FF9800;
+    font-size: 40px;
+    font-weight: bolder;
+  }
+
+  #curve { 
+    width: 500px
+  }
   
   /* html, body {
     height: 100%;

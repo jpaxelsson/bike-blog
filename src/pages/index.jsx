@@ -9,7 +9,16 @@ const IndexPage = () => {
     <div class="wrapper">
       <Header/>
       <main>
-        <h1>Bike Blog - Home</h1>
+
+        <svg viewBox="0 0 500 200">
+          <path id="curve" d="M6,150C49.63,93,105.79,36.65,156.2,47.55,207.89,58.74,213,131.91,264,150c40.67,14.43,108.57-6.91,229-145" />
+          <text x="25">
+            <textPath xlinkHref="#curve">
+              Dangerous Curves Ahead
+            </textPath>
+          </text>
+        </svg>
+        
         <Link to="/posts">Posts</Link>
       </main>
       <Footer/>
