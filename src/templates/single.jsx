@@ -29,7 +29,7 @@ const Single = ( {data} ) => {
               ))}
             </div>
             {post.postImages?.map( ({ ...postImage }) => (
-              <a href={"#slide-"+postImage.contentful_id}><i class="fa-sharp fa-solid fa-diamond"></i></a> 
+              <a href={"#slide-"+postImage.contentful_id}><i class="fa-regular fa-image"></i></a> 
             ))}
           </div>
 
