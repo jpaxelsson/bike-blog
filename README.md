@@ -67,3 +67,8 @@ ev även npm i @fortawesome/fontawesome-free
 3. använd sisomså <i class="fa-sharp fa-solid fa-diamond">
 
 
+vanilla javascript in project
+https://techstacker.com/add-custom-javascript-to-gatsbyjs-website/
+
+(copy html.js )
+

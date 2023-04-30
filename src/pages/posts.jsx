@@ -17,7 +17,7 @@ const PostsPage = ({ data }) => {
             </article>
           ))}
         </section>
-        <div id="scroll-to-top"><a href="#">Up!</a></div>
+        
       </main>
       <Footer/>
     </div>
@@ -39,6 +39,9 @@ query PostsPageQuery {
               url
           }
           slug
+          longText {
+            longText
+          }
         }
       }
     }

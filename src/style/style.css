@@ -27,8 +27,17 @@ img {
 
 footer {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    border-top: 1px solid rgb(128, 62, 0);
+    margin-top: 20px;
+}
+
+footer p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: goldenrod;
 }
 
 @keyframes tonext {
@@ -395,11 +404,28 @@ footer {
     width: 500px
   }
 
+
+  #scroll-to-top {
+    display: none;
+  }
+
 #scroll-to-top a {
     position: fixed;
     bottom: 20px;
     right: 20px;
     text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+    background-color: #ffffff;
+    padding: 6px 12px 6px 12px;
+    border-radius: 10px;
+    opacity: 70%;
+}
+
+#back-fab {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
     font-weight: bolder;
     font-size: 20px;
     background-color: #ffffff;

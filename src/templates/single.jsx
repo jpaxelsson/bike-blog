@@ -18,6 +18,7 @@ const Single = ( {data} ) => {
           <h3>{post.date}</h3>
           <Picture {...post.featureImage} />
           <p>{post.description}</p>
+          <p>{post.longText!==undefined?post.longText.longText:""}</p>
           <div class="slider">
             <div class="slides">
               {post.postImages?.map( ({ ...postImage }) => (
@@ -32,7 +33,7 @@ const Single = ( {data} ) => {
             ))}
           </div>
 
-          <Link to="/posts">&lt;&lt;&lt; Tillbaka</Link>
+          <Link id="back-fab" to="/posts"><i class="fa-solid fa-angles-left"></i></Link>
 
           </main>
         <Footer/>
