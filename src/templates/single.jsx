@@ -18,7 +18,7 @@ const Single = ( {data} ) => {
           <h3>{post.date}</h3>
           <Picture {...post.featureImage} />
           <p>{post.description}</p>
-          <p>{post.longText!==undefined?post.longText.longText:""}</p>
+          <p>{post.longText!==undefined&&post.longText!=null?post.longText.longText:""}</p>
           <div class="slider">
             <div class="slides">
               {post.postImages?.map( ({ ...postImage }) => (
@@ -54,6 +54,9 @@ query Posts($slug: String!) {
     postImages {
       url
       contentful_id
+    }
+    longText {
+      longText
     }
     title
   }

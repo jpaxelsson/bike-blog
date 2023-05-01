@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 import Post from '../components/Post'
 import Header from '../components/Header'
 import Footer from "../components/Footer"
+import '../style/style.css'
 
 const PostsPage = ({ data }) => {
     return <>
