@@ -13,7 +13,7 @@ const PostsPage = ({ data }) => {
         <h2>P O S T S</h2>
         <section>
           {data.allContentfulPost.edges.map( ({ node }) => (
-            <article key={node.contentful_id}>
+            <article className="post-panel" key={node.contentful_id}>
               <Post {...node}></Post>
             </article>
           ))}

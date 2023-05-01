@@ -442,7 +442,25 @@ footer p {
         text-shadow: 2px 4px #ae00ff
       }
   }
+
+  .open-post-layout { 
+    display: flex;
+    justify-content: center;
+  }
+
+  .open-post {
+    text-decoration: none;
+    border: #000 solid 1px;
+    color: black;
+    border-radius: 10px;
+    padding: 2px 20px;
+    font-weight: bolder;
+  }
   
+  .post-panel {
+    border-bottom: rgb(21, 223, 128) dashed 1px;
+    padding-bottom: 20px;
+  }
   /* html, body {
     height: 100%;
     overflow: hidden;

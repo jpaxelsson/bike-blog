@@ -7,7 +7,9 @@ const Post = ( node ) => {
         <h2>{node.date}</h2>
         <Picture {...node.featureImage} />
         <p>{node.description}</p>
-        <Link to={"../post/"+node.slug}>Läs allt om det!</Link>`
+        <div className="open-post-layout">
+            <Link className="open-post" to={"../post/"+node.slug}>Read more <i class="fa-solid fa-angles-right"></i></Link>`
+        </div>
     </>
 }
 
