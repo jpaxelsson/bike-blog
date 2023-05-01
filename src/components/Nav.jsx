@@ -60,7 +60,7 @@ const Nav = () => {
             .navigation ul {
                 display: ${hamburgerOpen ? 'flex' : 'none'};
                 background-color: lightcoral;
-                height: 100vh;
+                height: 94vh;
                 width: 50vw;
                 margin-top: 50px;
                 flex-direction: column; 

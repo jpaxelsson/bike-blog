@@ -284,16 +284,16 @@ footer p {
         display: flex;
         justify-content: space-around;
         flex-flow: column nowrap;
-        width: 2rem; 
-        height: 2rem;         
+        width: 20px; 
+        height: 40px;         
         padding-top: 5px;
         margin-left: 10px;
         z-index: 10;
     }
 
     .burger {
-        width: 2rem; 
-        height: 0.25rem;
+        width: 37px; 
+        height: 4px;
         border-radius: 10px;
         background-color: black;
         transform-origin: 10%;
