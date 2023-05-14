@@ -461,14 +461,19 @@ footer p {
     border-bottom: rgb(21, 223, 128) dashed 1px;
     padding-bottom: 20px;
   }
-  /* html, body {
-    height: 100%;
-    overflow: hidden;
+
+  .rich-text-bold {
+    font-weight: bold;
   }
-  body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(to bottom, #74ABE2, #5563DE);
-    font-family: 'Ropa Sans', sans-serif;
-  } */
+
+  .rich-text-italic {
+    font-style: italic;
+  }
+
+  .rich-text-ullist { 
+    margin-left: 20px;
+  }
+
+  .rich-text-ullist li { 
+    list-style: circle;
+  }

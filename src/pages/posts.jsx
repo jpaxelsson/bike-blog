@@ -39,10 +39,7 @@ query PostsPageQuery {
           featureImage {
               url
           }
-          slug
-          longText {
-            longText
-          }
+          slug          
         }
       }
     }

@@ -22,26 +22,26 @@ export default function HTML(props) {
         />
         {props.postBodyComponents}
         <script
-  dangerouslySetInnerHTML={{
-    __html: `
-  
-  window.onscroll = function () {
-    showHideFunction();
-  };
+          dangerouslySetInnerHTML={{
+            __html: `
+          
+          window.onscroll = function () {
+            showHideFunction();
+          };
 
-  function showHideFunction() {
-    let scrollToTop = document.querySelector("#scroll-to-top");
-    if (scrollToTop !== undefined) {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        scrollToTop.style.display = "block";
-      } else {
-        scrollToTop.style.display = "none";
-      }
-    }
-  }
-  `
-  }}
-/>
+          function showHideFunction() {
+            let scrollToTop = document.querySelector("#scroll-to-top");
+            if (scrollToTop !== undefined) {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTop.style.display = "block";
+              } else {
+                scrollToTop.style.display = "none";
+              }
+            }
+          }
+          `
+          }}
+        />
       </body>
     </html>
   )
