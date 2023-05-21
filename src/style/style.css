@@ -479,25 +479,66 @@ footer p {
   }
 
   .devider {
-    animation: blinker 3s linear infinite;
+    animation: blinker 6s linear infinite;
+    -webkit-animation: blinker 6s linear infinite;
     height: 4px;
     width: 100%;
   }
   
   @keyframes blinker {
-    20% {
+    0% {
       /* opacity: 0; */
       background-color: yellow
     }
-    40% {
+    15% {
       background-color: orange;
+    }
+    30% {
+      /* opacity: 0; */
+      background-color: orangered
+    }
+    45% {
+      /* opacity: 0; */
+      background-color: red
     }
     60% {
       /* opacity: 0; */
       background-color: orangered
     }
     80% {
+      background-color: orange;
+    }
+    100% {
+      /* opacity: 0; */
+      background-color: yellow
+    }
+  }
+
+  @-webkit-keyframes blinker {
+    0% {
+      /* opacity: 0; */
+      background-color: yellow
+    }
+    15% {
+      background-color: orange;
+    }
+    30% {
+      /* opacity: 0; */
+      background-color: orangered
+    }
+    45% {
       /* opacity: 0; */
       background-color: red
+    }
+    60% {
+      /* opacity: 0; */
+      background-color: orangered
+    }
+    80% {
+      background-color: orange;
+    }
+    100% {
+      /* opacity: 0; */
+      background-color: yellow
     }
   }
