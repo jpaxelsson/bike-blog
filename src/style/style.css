@@ -30,7 +30,7 @@ footer {
     flex-direction: column;
     /* justify-content: space-between; */
     align-items: center;
-    border-top: 1px solid rgb(128, 62, 0);
+    /* border-top: 1px solid rgb(128, 62, 0); */
     margin-top: 20px;
 }
 
@@ -471,9 +471,33 @@ footer p {
   }
 
   .rich-text-ullist { 
-    margin-left: 20px;
+    margin-left: 10px;
   }
 
   .rich-text-ullist li { 
     list-style: circle;
+  }
+
+  .devider {
+    animation: blinker 3s linear infinite;
+    height: 4px;
+    width: 100%;
+  }
+  
+  @keyframes blinker {
+    20% {
+      /* opacity: 0; */
+      background-color: yellow
+    }
+    40% {
+      background-color: orange;
+    }
+    60% {
+      /* opacity: 0; */
+      background-color: orangered
+    }
+    80% {
+      /* opacity: 0; */
+      background-color: red
+    }
   }
