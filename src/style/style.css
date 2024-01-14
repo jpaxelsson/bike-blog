@@ -3,13 +3,12 @@
 
 html {
     font-family: 'Montserrat', sans-serif;
-    background-color: lightgrey;
 
     background-image: linear-gradient(
     to bottom,
     rgb(255 255 0 / 50%),
     rgb(0 0 255 / 50%)
-  ), url("..\\images\\lizard.png");
+  ), url("../images/lizard.png");
   background-attachment: fixed;
 }
 
