@@ -55,7 +55,7 @@ const Nav = () => {
             </div>
         </StyledNav>
 
-        <style jsx>{
+        <style jsx="true">{
         `@media only screen and (max-width: 480px){
             
             .navigation ul {

@@ -6,7 +6,7 @@ import Footer from "../components/Footer"
 
 const IndexPage = () => {
   return (
-    <div class="wrapper">
+    <div className="wrapper">
       <Header/>
       <main>
 
