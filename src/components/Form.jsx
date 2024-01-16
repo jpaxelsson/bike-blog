@@ -52,7 +52,7 @@ function Form() {
     }
 
     return <>
-    <StyledForm name="contact" action="/" method="POST" data-netlify="true">
+    <form name="contact" method="POST" data-netlify="true">
         
         <i className="fa fa-user icon"></i>
         <input type="text" placeholder="First Name" name="firstName" onChange={handleChange} value={formData.firstName} />
@@ -63,7 +63,7 @@ function Form() {
         <i className="fa-regular fa-comment"></i>
         <textarea rows="4" placeholder="Kommentar" name="comment"  onChange={handleChange} value={formData.comment} />
         <div></div><input type="submit" value="Send"/>
-    </StyledForm>
+    </form>
     </>
 }
 
