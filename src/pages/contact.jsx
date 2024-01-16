@@ -11,8 +11,12 @@ const ContactPage = () => {
       <Header/>
       <main>
         <Form />
+        
       </main>
       <Footer/>
+      <div id="alert">
+          <h3 className="alert-text">Under construction</h3>
+        </div>
     </div>
   )
 }

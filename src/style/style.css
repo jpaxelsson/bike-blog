@@ -2,9 +2,9 @@
 @import url('@fortawesome/fontawesome-free/css/all.min.css');
 
 html {
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 
-    background-image: linear-gradient(
+  background-image: linear-gradient(
     to bottom,
     rgb(255 255 0 / 50%),
     rgb(0 0 255 / 50%)
@@ -556,4 +556,44 @@ footer p {
     }
   }
 
-  
+  .alert-text {
+    color: red;
+    font-weight: bolder;
+    background-color: yellow;
+    text-transform: uppercase;
+  }
+
+  #alert {
+    display: none;
+    
+    width: 400px;
+    height: 70px;
+    position:fixed; 
+    top: calc(50% - 35px);
+    left: calc(50% - 200px);
+    /* background-color: lightgrey;  */
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    border-radius: 8px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    background: repeating-linear-gradient(
+      45deg,
+      yellow,
+      yellow 10px,
+      black 10px,
+      black 20px
+    );
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }

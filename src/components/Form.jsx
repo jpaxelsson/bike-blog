@@ -27,7 +27,8 @@ function Form() {
     const [formData, setFormData] = useState({
         firstName: "", 
         lastName: "", 
-        comment: ""
+        comment: "",
+        email: ""
     }) 
 
     console.log(formData)
@@ -45,16 +46,23 @@ function Form() {
 
     }
 
+    function handleSubmit(event) {
+        event.preventDefault();
+        document.getElementById("alert").style.display = "block";
+    }
+
     return <>
-    <StyledForm>
+    <StyledForm name="contact" method="POST" data-netlify="true">
         
         <i className="fa fa-user icon"></i>
         <input type="text" placeholder="First Name" name="firstName" onChange={handleChange} value={formData.firstName} />
         <i className="fa fa-user icon"></i>
         <input type="text" placeholder="Last Name" name="lastName" onChange={handleChange} value={formData.lastName} />
+        <i className="fa fa-user icon"></i>
+        <input type="email" placeholder="Email" name="email" onChange={handleChange} value={formData.email} />
         <i className="fa-regular fa-comment"></i>
         <textarea rows="4" placeholder="Kommentar" name="comment"  onChange={handleChange} value={formData.comment} />
-        
+        <div></div><input type="submit" value="Send" onClick={handleSubmit}/>
     </StyledForm>
     </>
 }
