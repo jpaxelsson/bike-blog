@@ -52,7 +52,7 @@ function Form() {
     }
 
     return <>
-    <StyledForm name="contact" method="POST" data-netlify="true">
+    <StyledForm name="contact" action="/" method="POST" data-netlify="true">
         
         <i className="fa fa-user icon"></i>
         <input type="text" placeholder="First Name" name="firstName" onChange={handleChange} value={formData.firstName} />
