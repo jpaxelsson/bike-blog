@@ -62,7 +62,7 @@ function Form() {
         <input type="email" placeholder="Email" name="email" onChange={handleChange} value={formData.email} />
         <i className="fa-regular fa-comment"></i>
         <textarea rows="4" placeholder="Kommentar" name="comment"  onChange={handleChange} value={formData.comment} />
-        <div></div><input type="submit" value="Send" onClick={handleSubmit}/>
+        <div></div><input type="submit" value="Send"/>
     </StyledForm>
     </>
 }
