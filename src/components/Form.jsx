@@ -47,8 +47,8 @@ function Form() {
     }
 
     function handleSubmit(event) {
-        event.preventDefault();
-        document.getElementById("alert").style.display = "block";
+        //
+        //document.getElementById("alert").style.display = "block";
     }
 
     return <>
